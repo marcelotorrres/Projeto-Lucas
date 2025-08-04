@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> STUDIO TORRES </title>
+</head>
+
+<body>
+
+    <section class="topo">
+        <div class="div-background-img">
+            <img src="./assets/img-fundo.jpg" class="background-img">
+        </div>
+        <h1> LUCAS <span style="color: red">TORRES</span> </h1>
+    </section>
+
+    <div class="nav">
+        <img src="./assets/logo.png" class="img-logo">
+        <nav class="nav-center">
+            <ul class="menu-list">
+                <li class="nav-li"><a href="#info">sobre mim</a></li>
+                <li class="nav-li"><a href="#conteiner-trabalhos">trabalhos</a></li>
+                <li class="nav-li"><a href="#localizacao">localização</a></li>
+                <li class="nav-li"><a>fale comigo</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <div class="conteiner-sobre-mim">
+        <div class="info-texto">
+            <h2 class="info" id="info"> LUCAS TORRES </h2>
+            <p class="info-paragrafo"> Sou [Seu Nome], tatuador profissional e fundador do Studio Torres. Desde que fiz
+                minha
+                primeira tatuagem, descobri uma paixão pela arte na pele — um espaço onde criatividade, técnica e
+                significado se
+                encontram.
+
+                Com anos de experiência no mundo da tatuagem, me especializo em [estilos que você faz, ex: realismo,
+                blackwork,
+                pontilhismo], sempre buscando criar algo único para cada cliente. Acredito que tatuar é mais do que
+                desenhar: é
+                contar histórias, expressar identidades e eternizar momentos.
+
+                No Studio Torres, cada detalhe importa — desde o primeiro risco no papel até o brilho no olhar de quem
+                sai
+                realizado. Trabalho com equipamentos modernos, materiais de alta qualidade e foco total na higiene,
+                segurança e
+                conforto.
+
+                Se você valoriza arte, profissionalismo e atendimento personalizado, será um prazer te receber no nosso
+                estúdio.
+            </p>
+        </div>
+
+        <img src="./assets/img-info.png" class="img-info">
+    </div>
+
+    <div class="conteiner-trabalhos" id="conteiner-trabalhos">
+       
+
+        <div class="galeria-conteudo">
+            <div class="galeria-img">
+                <img src="./assets/cobertura1.jpg" class="img-galeria" onclick="abrirImagem(this)">
+                <img src="./assets/cobertura2.jpg" class="img-galeria" onclick="abrirImagem(this)">
+                <img src="./assets/tatuagem1.jpg" class="img-galeria" onclick="abrirImagem(this)">
+                <img src="./assets/tatuagem2.jpg" class="img-galeria" onclick="abrirImagem(this)">
+            </div>
+            <div id="modal" class="modal" onclick="fecharImagem()">
+                <span class="fechar"> &times; </span>
+                <img class="modal-conteudo" id="img-ampliada"> 
+            </div>
+
+
+            <div class="galeria-texto" id="galeria-texto">
+                <h3> Transforme o que te incomoda em uma nova arte </h3>
+                <!-- <p>Nem toda tatuagem representa quem somos hoje. Seja por arrependimento, mudança de gosto ou uma má
+                    execução, muitas pessoas carregam marcas que prefeririam deixar no passado.
+
+                    Com a técnica de cobertura, é possível transformar aquela tatuagem antiga em uma nova obra, com
+                    significado, beleza e qualidade.
+
+                    Aqui, cada projeto de cobertura é pensado com cuidado, respeitando os limites da pele e do desenho
+                    anterior, para criar algo novo, harmonioso e com a sua identidade.
+
+                    Agende uma avaliação gratuita e descubra como sua antiga tatuagem pode dar lugar a uma nova
+                    história.
+                </p> -->
+            </div>
+            <div class="galeria-img">
+                <img src="./assets/cobertura1.jpg" class="img-galeria" onclick="abrirImagem(this)">
+                <img src="./assets/cobertura2.jpg" class="img-galeria" onclick="abrirImagem(this)">
+                <img src="./assets/tatuagem1.jpg" class="img-galeria" onclick="abrirImagem(this)">
+                <img src="./assets/tatuagem2.jpg" class="img-galeria" onclick="abrirImagem(this)">
+            </div>
+        </div>
+    </div>
+    <div class="conteiner-localizacao" id="localizacao">
+        <h2> STUDIO TORRES</h2>
+        <p> Studio Torres está localizado na cidade de Votuporanga - SP
+            <br> Avenida Joaquim Jose de Moraes, 2606
+            <br> Parque Residencial Santa Amélia
+            <br> Votuporanga - SP
+            <br> CEP: 15503-174
+    <br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d330.54562869463405!2d-49.97308232044798!3d-20.395383846027194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bd59395d858fa5%3A0x71b125e37669fcfc!2sstudio%20torres!5e0!3m2!1spt-BR!2sbr!4v1752792617280!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+        
+    </body>
+    <script src="./scripts.js"></script>
+
+</html>
