@@ -104,6 +104,11 @@ body {
     font-weight: bold;
 }
 
+.nav-li:hover {
+    opacity: 0.5;
+    transform: scale(1.05);
+   
+}
 
 .img-logo {
     width: 70px;
@@ -130,7 +135,7 @@ body {
     gap: 40px;
     padding: 100px; 
     z-index: 1;
-    background-color: #cccaca;
+    background-color: #e4e2e2;
 }
 
 .info-texto {
@@ -146,12 +151,14 @@ body {
 
 .conteiner-trabalhos {
     padding: 20px;
-    background-image: url('./assets/background2.png');
+    background: #131414;
+    background: linear-gradient(90deg,rgba(19, 20, 20, 1) 0%, rgba(92, 7, 7, 1) 50%, rgba(18, 18, 16, 1) 100%);
+    /* background-image: url('./assets/background2.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     color: white;
-    height: 80vh;
+    height: auto;
 }
 
 .galeria-conteudo {
@@ -177,16 +184,52 @@ body {
     object-fit: cover;    
     border-radius: 10px;
     cursor: pointer;
-    
 }
 
-
+.img-galeria:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
 
 .galeria-texto h3 {
     color: #fab700;
     font-family: "Open Sans", sans-serif;
     text-align: justify;
     font-size: 40px;
+    text-align: center;
+}
+
+.galeria-texto-cobertura {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+    text-align: center;
+    min-height: 100vh; 
+}
+
+.galeria-texto-cobertura h3 {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #fab700;
+    font-family: "Open Sans", sans-serif;
+    text-align: justify;
+    font-size: 40px;
+    text-align: center;
+}
+
+.img-cobertura {
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    display: flex;
+    margin-top: 40px;;
+    cursor: pointer;
+}
+
+.img-cobertura:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
 }
 
 
@@ -224,7 +267,7 @@ body {
 
 .conteiner-localizacao {
     padding: 100px;
-    background-color: #e0dede
+    background-color: #e4e2e2;
     
 }
 

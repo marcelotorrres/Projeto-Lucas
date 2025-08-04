@@ -8,3 +8,16 @@ function abrirImagem(img) {
 function fecharImagem() {
     document.getElementById("modal").style.display = "none";
 }
+
+
+function trocarImagem(imagem, novoSrc) {
+    const srcAtual = imagem.src;
+    const nomeNovo = novoSrc.split('/').pop();
+    const nomeOriginal = 'img-cobertura1.jpg';
+
+    if (srcAtual.includes(nomeNovo)) {
+        imagem.src = './assets/' + nomeOriginal;
+        } else {
+            imagem.src = novoSrc;
+        }   
+}
