@@ -21,3 +21,38 @@ function trocarImagem(imagem, novoSrc) {
             imagem.src = novoSrc;
         }   
 }
+
+////////
+
+const titulo = document.querySelector('.titulo');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+observer.observe(titulo);
+
+
+////////////
+
+const btnEnviar = document.getElementById('btn-enviar');
+const form = document.getElementById('form-contato');
+
+form.addEventListener('submit', (e) => {
+  // muda o botão imediatamente
+  btnEnviar.innerText = 'Mensagem enviada!';
+  btnEnviar.disabled = true;
+
+  // o form vai abrir o Formspree normalmente em nova aba por causa do target="_blank"
+  // não usamos preventDefault, para garantir POST correto
+});
+
+
+
+//https://formspree.io/f/mnnbrrkg
