@@ -20,7 +20,7 @@
     <div class="nav">
         <img src="./assets/logo.png" class="img-logo">
         <nav class="nav-center">
-            <ul class="menu-list">
+            <ul class="menu-list" id="menu-list">
                 <li class="nav-li"><a href="#topo">INÍCIO</a></li>
                 <li class="nav-li"><a href="#info">SOBRE MIM</a></li>
                 <li class="nav-li"><a href="#conteiner-trabalhos">TRABALHOS</a></li>
@@ -28,6 +28,7 @@
                 <li class="nav-li"><a href="#conteiner-fale-comigo">FALE COMIGO</a></li>
             </ul>
         </nav>
+        <img src="./assets/icone_menu.png" alt="botao-menu" class="icone-menu" onclick="showMenu()">
 
     </div>
 
@@ -77,19 +78,21 @@
                 <img src="./assets/tatuagem3.jpg" class="img-galeria" onclick="abrirImagem(this)">
                 <img src="./assets/tatuagem4.jpg" class="img-galeria" onclick="abrirImagem(this)">
             </div>
-            <div id="modal" class="modal" onclick="fecharImagem()">
-                <span class="fechar"> &times; </span>
-                <img class="modal-conteudo" id="img-ampliada">
-            </div>
 
             <div class="galeria-texto" id="galeria-texto">
                 <h3 class="titulo-realismo"> REALISMO </h3>
             </div>
+
             <div class="galeria-img">
                 <img src="./assets/tatuagem5.jpg" class="img-galeria" onclick="abrirImagem(this)">
                 <img src="./assets/tatuagem6.jpg" class="img-galeria" onclick="abrirImagem(this)">
                 <img src="./assets/tatuagem7.jpg" class="img-galeria" onclick="abrirImagem(this)">
                 <img src="./assets/tatuagem8.jpg" class="img-galeria" onclick="abrirImagem(this)">
+            </div>
+
+            <div id="modal" class="modal" onclick="fecharImagem()">
+                <span class="fechar"> &times; </span>
+                <img class="modal-conteudo" id="img-ampliada">
             </div>
         </div>
 
@@ -104,18 +107,19 @@
                     <img src="./assets/cobertura2.jpg" class="img-galeria-cobertura" onclick="abrirImagem(this)">
 
                 </div>
+                <div class="galeria-img-cobertura">
+                    <img src="./assets/cobertura3.png" class="img-galeria-cobertura" onclick="abrirImagem(this)">
+                    <img src="./assets/cobertura4.png" class="img-galeria-cobertura" onclick="abrirImagem(this)">
+
+                </div>
+
                 <div id="modal" class="modal" onclick="fecharImagem()">
                     <span class="fechar"> &times; </span>
                     <img class="modal-conteudo" id="img-ampliada">
                 </div>
 
-
             </div>
-            <div class="galeria-img-cobertura">
-                <img src="./assets/cobertura3.png" class="img-galeria-cobertura" onclick="abrirImagem(this)">
-                <img src="./assets/cobertura4.png" class="img-galeria-cobertura" onclick="abrirImagem(this)">
 
-            </div>
         </div>
 
         <div class="galeria-texto-cobertura" id="galeria-texto">
@@ -126,14 +130,25 @@
     </div>
     <div class="conteiner-localizacao" id="localizacao">
         <h2 class="titulo-localizacao"> STUDIO TORRES</h2>
-        <div>
+        <div class="info-localizacao">
             <p>Studio Torres está localizado na cidade de Votuporanga - SP <br>
                 Avenida Joaquim Jose de Moraes, 2606 <br>
                 Parque Residencial Santa Amélia <br>
                 Votuporanga - SP <br>
                 CEP: 15503-174</p>
+            <img class="img-studio" src="./assets/propaganda_studio.png">
 
-            <img src="./assets/propaganda_studio.png">
+            <div class="img-responsiva">
+                <img class= "img-responsiva-studio" src="./assets/studio1.png" alt="img1">
+                <img class="img-responsiva-studio" src="./assets/studio2.png" alt="img2">
+
+            </div>
+
+            <!--<picture class="img-studio">
+                <source srcset="./assets/propaganda_studio_responsiva.png" media="(max-width: 880px)">
+                <img src="./assets/propaganda_studio.png">
+            </picture>
+            -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d290.0331504434114!2d-49.97313544827796!3d-20.395547387003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1757494564553!5m2!1spt-BR!2sbr"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -150,7 +165,7 @@
         </video>
 
         <h2 class="titulo-fale-comigo"> FALE COMIGO </h2>
-        
+
 
         <div class="contato-container">
             <h3 class="titulo-contato">ENTRE EM CONTATO</h3>
@@ -178,7 +193,7 @@
                 href="https://api.whatsapp.com/send?phone=5517991398325&text=Ol%C3%A1%20Lucas!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20tattoo%20com%20voc%C3%AA!&fbclid=PAZXh0bgNhZW0CMTEAAadZAm6s0q7rCnHHup2bL3sA4-XYbzRFQgu7WpLbTpTc_jUQlJnBconORSuD9Q_aem_hQ7qTlHTpWzLd8A4x9wQMg">
                 <img src="./assets/icone-whatsapp.png" class="icone-redes">
             </a>
-            
+
         </div>
     </div>
 
