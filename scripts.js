@@ -1,3 +1,5 @@
+AOS.init();
+
 function abrirImagem(img) {
     const modal = document.getElementById("modal"); 
     const imgAmpliada = document.getElementById("img-ampliada");
@@ -10,17 +12,7 @@ function fecharImagem() {
 }
 
 
-function trocarImagem(imagem, novoSrc) {
-    const srcAtual = imagem.src;
-    const nomeNovo = novoSrc.split('/').pop();
-    const nomeOriginal = 'img-cobertura1.jpg';
 
-    if (srcAtual.includes(nomeNovo)) {
-        imagem.src = './assets/' + nomeOriginal;
-        } else {
-            imagem.src = novoSrc;
-        }   
-}
 
 ////////
 
@@ -67,3 +59,32 @@ const menuList = document.getElementById("menu-list")
             menuList.style.maxHeight = "0px"
        }
     }
+
+///////////////////////////////////////////
+
+let slideIndex = 0;
+    const slidesWrapper = document.getElementById("slides");
+    const dots = document.getElementsByClassName("dot");
+
+    function updateSlidePosition() {
+      slidesWrapper.style.transform = `translateX(-${slideIndex * 100}%)`;
+      for (let i = 0; i < dots.length; i++) {
+        dots[i].classList.remove("active");
+      }
+      dots[slideIndex].classList.add("active");
+    }
+
+    function moveSlide(n) {
+      slideIndex += n;
+      if (slideIndex > 1) slideIndex = 0;
+      if (slideIndex < 0) slideIndex = 1;
+      updateSlidePosition();
+    }
+
+    function currentSlide(n) {
+      slideIndex = n;
+      updateSlidePosition();
+    }
+
+    // inicializa
+    updateSlidePosition();

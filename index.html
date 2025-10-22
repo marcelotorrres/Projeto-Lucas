@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./assets/logo-icon.png">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <title> STUDIO TORRES </title>
 </head>
 
@@ -12,31 +15,34 @@
 
     <section class="topo" id="topo">
         <div class="div-background-img">
-            <img src="./assets/img-fundo.jpg" class="background-img">
+            <img src="./assets/img-fundo.jpg" class="background-img" alt="background-img">
         </div>
-        <h1 class="titulo"> Lucas <span class="span-titulo" style="color: red">Torres</span> </h1>
+        <h1 class="titulo"> Lucas Torres </h1>
     </section>
 
     <div class="nav">
-        <img src="./assets/logo.png" class="img-logo">
+        <img src="./assets/logo.png" class="img-logo" alt="img-logo">
         <nav class="nav-center">
             <ul class="menu-list" id="menu-list">
                 <li class="nav-li"><a href="#topo">INÍCIO</a></li>
                 <li class="nav-li"><a href="#info">SOBRE MIM</a></li>
                 <li class="nav-li"><a href="#conteiner-trabalhos">TRABALHOS</a></li>
                 <li class="nav-li"><a href="#localizacao">LOCALIZAÇÃO</a></li>
-                <li class="nav-li"><a href="#conteiner-fale-comigo">FALE COMIGO</a></li>
+                <li class="nav-li"><a href="#conteiner-fale-comigo">CONTATO</a></li>
             </ul>
         </nav>
-        <img src="./assets/icone_menu.png" alt="botao-menu" class="icone-menu" onclick="showMenu()">
+        <img src="./assets/icone_menu.png" class="icone-menu" alt="botao-menu" onclick="showMenu()">
 
     </div>
 
 
     <div class="conteiner-sobre-mim" id="info">
+        
         <div class="info-texto">
             <h2 class="info"> LUCAS TORRES </h2>
-            <p class="info-paragrafo"> Sou [Seu Nome], tatuador profissional e fundador do Studio Torres. Desde que fiz
+            <p class="info-paragrafo" data-aos="fade-right" data-aos-duration="2000">
+                Sou [Seu Nome], tatuador profissional e fundador do Studio
+                Torres. Desde que fiz
                 minha
                 primeira tatuagem, descobri uma paixão pela arte na pele — um espaço onde criatividade, técnica e
                 significado se
@@ -59,148 +65,189 @@
             </p>
         </div>
 
-        <img src="./assets/foto.png" class="img-info">
+        <img src="./assets/foto.png" class="img-info" alt="img-info-lucas" data-aos="fade-left"
+            data-aos-duration="2000">
     </div>
 
     <div class="conteiner-trabalhos" id="conteiner-trabalhos">
-
-        <p class="texto-trabalhos"> Cada traço <span style="color: white; background-color: black;">realista</span> é um
-            detalhe de vida. </p>
-        <p class="texto-trabalhos">Alguns <span style="color: white; background-color: black;">trabalhos</span> que
-            mudaram vidas </p>
-        <img src="./assets/seta.png" class="seta">
-
-        <div class="galeria-conteudo">
-
-            <div class="galeria-img">
-                <img src="./assets/tatuagem1.jpg" class="img-galeria" onclick="abrirImagem(this)">
-                <img src="./assets/tatuagem2.png" class="img-galeria" onclick="abrirImagem(this)">
-                <img src="./assets/tatuagem3.jpg" class="img-galeria" onclick="abrirImagem(this)">
-                <img src="./assets/tatuagem4.jpg" class="img-galeria" onclick="abrirImagem(this)">
-            </div>
-
-            <div class="galeria-texto" id="galeria-texto">
-                <h3 class="titulo-realismo"> REALISMO </h3>
-            </div>
-
-            <div class="galeria-img">
-                <img src="./assets/tatuagem5.jpg" class="img-galeria" onclick="abrirImagem(this)">
-                <img src="./assets/tatuagem6.jpg" class="img-galeria" onclick="abrirImagem(this)">
-                <img src="./assets/tatuagem7.jpg" class="img-galeria" onclick="abrirImagem(this)">
-                <img src="./assets/tatuagem8.jpg" class="img-galeria" onclick="abrirImagem(this)">
-            </div>
-
-            <div id="modal" class="modal" onclick="fecharImagem()">
-                <span class="fechar"> &times; </span>
-                <img class="modal-conteudo" id="img-ampliada">
-            </div>
-        </div>
-
-
-        <div class="galeria-texto-cobertura" id="galeria-texto">
-            <h3 class="titulo-cobertura">COBERTURA</h3>
+        
+        
 
 
             <div class="galeria-conteudo">
-                <div class="galeria-img-cobertura">
-                    <img src="./assets/cobertura1.jpg" class="img-galeria-cobertura" onclick="abrirImagem(this)">
-                    <img src="./assets/cobertura2.jpg" class="img-galeria-cobertura" onclick="abrirImagem(this)">
 
+
+                <div class="galeria-texto" id="galeria-texto">
+                    <h3 class="titulo-realismo"> REALISMO </h3>
+                    <p class="marca-titulo"></p>
+                    <p class="texto-realista">Cada traço, sombra e detalhe carrega uma história.<br />
+                        A tatuagem realista vai além de uma simples imagem é a expressão da alma, feita com precisão e
+                        sensibilidade em cada toque.</p>
                 </div>
-                <div class="galeria-img-cobertura">
-                    <img src="./assets/cobertura3.png" class="img-galeria-cobertura" onclick="abrirImagem(this)">
-                    <img src="./assets/cobertura4.png" class="img-galeria-cobertura" onclick="abrirImagem(this)">
+
+                <div class="galeria-img" data-aos="zoom-in-down">
+                    <img src="./assets/tatuagem1.jpg" class="img-galeria" alt="img-realista1"
+                        onclick="abrirImagem(this)">
+                    <img src="./assets/tatuagem2.png" class="img-galeria" alt="img-realista2"
+                        onclick="abrirImagem(this)">
+                    <img src="./assets/tatuagem3.jpg" class="img-galeria" alt="img-realista3"
+                        onclick="abrirImagem(this)">
+                    <img src="./assets/tatuagem4.jpg" class="img-galeria" alt="img-realista4"
+                        onclick="abrirImagem(this)">
+                </div>
+
+
+
+                <div class="galeria-img" data-aos="zoom-in-down">
+                    <img src="./assets/tatuagem5.jpg" class="img-galeria" alt="img-realista5"
+                        onclick="abrirImagem(this)">
+                    <img src="./assets/tatuagem6.jpg" class="img-galeria" alt="img-realista6"
+                        onclick="abrirImagem(this)">
+                    <img src="./assets/tatuagem7.jpg" class="img-galeria" alt="img-realista7"
+                        onclick="abrirImagem(this)">
+                    <img src="./assets/tatuagem8.jpg" class="img-galeria" alt="img-realista8"
+                        onclick="abrirImagem(this)">
+                </div>
+
+                <div id="modal" class="modal" onclick="fecharImagem()">
+                    <span class="fechar"> &times; </span>
+                    <img class="modal-conteudo" id="img-ampliada" alt="img-modal-ampliada">
+                </div>
+
+            </div>
+
+
+            <div class="galeria-conteudo" id="galeria-texto">
+                <div class="galeria-texto" id="galeria-texto">
+                    <h3 class="titulo-realismo"> COBERTURA </h3>
+                    <p class="marca-titulo"></p>
+                    <p class="texto-realista">Toda marca tem um passado, mas também pode ter um novo começo.
+                        As tatuagens de cobertura transformam histórias antigas em novas obras de arte, com técnica,
+                        sensibilidade e olhar criativo, cada traço apaga o que ficou para trás e revela algo totalmente
+                        novo</p>
+                </div>
+
+                <div class="galeria-img grid-5" data-aos="zoom-in-down">
+                    <img src="./assets/cobertura1.jpg" class="img-galeria" alt="img-cobertura1"
+                        onclick="abrirImagem(this)">
+                    <img src="./assets/cobertura2.jpg" class="img-galeria" alt="img-cobertura2"
+                        onclick="abrirImagem(this)">
+                    <img src="./assets/cobertura3.png" class="img-galeria" alt="img-cobertura3"
+                        onclick="abrirImagem(this)">
+                    <img src="./assets/cobertura4.png" class="img-galeria" alt="img-cobertura4"
+                        onclick="abrirImagem(this)">
+                    <img src="./assets/cobertura5.png" class="img-galeria" alt="img-cobertura5"
+                        onclick="abrirImagem(this)">
+                    <img src="./assets/cobertura6.png" class="img-galeria" alt="img-cobertura6"
+                        onclick="abrirImagem(this)">
 
                 </div>
 
                 <div id="modal" class="modal" onclick="fecharImagem()">
                     <span class="fechar"> &times; </span>
-                    <img class="modal-conteudo" id="img-ampliada">
+                    <img class="modal-conteudo" id="img-ampliada" alt="img-modal-ampliada">
                 </div>
 
+
+
             </div>
 
-        </div>
-
-        <div class="galeria-texto-cobertura" id="galeria-texto">
-            <h3 class="texto-piscar"> CLIQUE NA IMAGEM ABAIXO PARA REFORMAR A TATUAGEM </h3>
-            <img src="./assets/img-cobertura1.jpg" class="img-cobertura" id="img-cobertura"
-                onclick="trocarImagem(this, './assets/img-cobertura2.jpg')">
-        </div>
+        
     </div>
     <div class="conteiner-localizacao" id="localizacao">
-        <h2 class="titulo-localizacao"> STUDIO TORRES</h2>
-        <div class="info-localizacao">
-            <p>Studio Torres está localizado na cidade de Votuporanga - SP <br>
-                Avenida Joaquim Jose de Moraes, 2606 <br>
-                Parque Residencial Santa Amélia <br>
-                Votuporanga - SP <br>
-                CEP: 15503-174</p>
-            <img class="img-studio" src="./assets/propaganda_studio.png">
 
-            <div class="img-responsiva">
-                <img class= "img-responsiva-studio" src="./assets/studio1.png" alt="img1">
-                <img class="img-responsiva-studio" src="./assets/studio2.png" alt="img2">
 
+        <div class="slide-conteiner">
+            <div class="slide-wrapper" id="slides">
+                <div class="slide"><img src="./assets/studio1.png" alt="img-studio1"></div>
+                <div class="slide"><img src="./assets/studio2.png" alt="img-studio2"></div>
             </div>
 
-            <!--<picture class="img-studio">
-                <source srcset="./assets/propaganda_studio_responsiva.png" media="(max-width: 880px)">
-                <img src="./assets/propaganda_studio.png">
-            </picture>
-            -->
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d290.0331504434114!2d-49.97313544827796!3d-20.395547387003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1757494564553!5m2!1spt-BR!2sbr"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <a class="voltar" onclick="moveSlide(-1)">❮</a>
+            <a class="prox" onclick="moveSlide(1)">❯</a>
+
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+            </div>
+
+        </div>
+        <div class="info-localizacao">
+            <h2 class="titulo-localizacao"> STUDIO TORRES</h2>
+            <p class="marca-titulo-loc"></p>
+            <p>O Studio Torres é um estúdio de tatuagem localizado em Votuporanga - SP, especializado em realismo preto
+                e cinza.
+                Aqui, cada tatuagem é desenvolvida com técnica, sensibilidade e atenção aos mínimos detalhes,
+                transformando ideias, memórias e sentimentos em obras de arte vivas na pele.
+                O foco está na excelência artística, na segurança e na experiência completa do cliente.
+                O ambiente foi criado para inspirar e oferecer conforto, com estrutura profissional e um atendimento
+                individualizado que valoriza cada etapa do processo — do desenho à finalização.
+            </p>
         </div>
     </div>
 
-    <div class="conteiner-fale-comigo" id="conteiner-fale-comigo">
 
-        <video autoplay muted loop playsinline class="video-fundo">
-            <source src="./assets/video-fundo.mp4" type="video/mp4">
-            Seu navegador não suporta vídeos em HTML5.
-        </video>
+    <iframe data-aos="zoom-out-down" data-aos-duration="2000"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d290.0331504434114!2d-49.97313544827796!3d-20.395547387003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1757494564553!5m2!1spt-BR!2sbr"
+        width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
 
-        <h2 class="titulo-fale-comigo"> FALE COMIGO </h2>
+    <footer>
+        <div class="conteiner-fale-comigo" id="conteiner-fale-comigo">
+            <div class="contato-container">
+                <h3 class="titulo-contato">CONTATO</h3>
 
 
-        <div class="contato-container">
-            <h3 class="titulo-contato">ENTRE EM CONTATO</h3>
-            <p class="texto-contato">Preencha o formulário abaixo e receba seu orçamento:</p>
+                <div class="form-e-redes">
+                    <form class="form-contato" id="form-contato" action="https://formspree.io/f/mnnbrrkg" method="POST">
+                        <p class="texto-contato">Preencha o formulário abaixo e receba seu orçamento via email </p>
+                        <div class="colunas-form">
 
-            <form class="form-contato" id="form-contato" action="https://formspree.io/f/mnnbrrkg" method="POST">
-                <label for="nome">Nome</label>
-                <input type="text" id="nome" name="nome" required>
+                            <div class="coluna-form coluna1">
+                                <label for="nome">Nome</label>
+                                <input type="text" id="nome" name="nome" required>
 
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required>
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
 
-                <label for="mensagem">Mensagem</label>
-                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                            <div class="coluna-form coluna2">
+                                <label for="mensagem">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
 
-                <button type="submit" class="btn-enviar" id="btn-enviar">Enviar</button>
-            </form>
+                                <button type="submit" class="btn-enviar" id="btn-enviar">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="coluna-direita">
+                        <p class="texto-contato">Entre em contato via mídias sociais </p>
+
+                        <div class="redes-sociais">
+                            <p class="texto-contato">@lucas_torrres</p>
+                            <a href="https://www.instagram.com/lucas_torrres/">
+                                <img src="./assets/icone-instagram.png" class="icone-redes" alt="img-icone-instagram">
+                            </a>
+                            <p class="texto-contato">+55 (17) 991398325</p>
+
+                            <a
+                                href="https://api.whatsapp.com/send?phone=5517991398325&text=Ol%C3%A1%20Lucas!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20tattoo%20com%20voc%C3%AA!&fbclid=PAZXh0bgNhZW0CMTEAAadZAm6s0q7rCnHHup2bL3sA4-XYbzRFQgu7WpLbTpTc_jUQlJnBconORSuD9Q_aem_hQ7qTlHTpWzLd8A4x9wQMg">
+                                <img src="./assets/icone-whatsapp.png" class="icone-redes" alt="img-icone-whatsapp">
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="redes-sociais">
-            <a href="https://www.instagram.com/lucas_torrres/">
-                <img src="./assets/icone-instagram.png" class="icone-redes">
-            </a>
-            <a
-                href="https://api.whatsapp.com/send?phone=5517991398325&text=Ol%C3%A1%20Lucas!%20Gostaria%20de%20fazer%20um%20or%C3%A7amento%20de%20tattoo%20com%20voc%C3%AA!&fbclid=PAZXh0bgNhZW0CMTEAAadZAm6s0q7rCnHHup2bL3sA4-XYbzRFQgu7WpLbTpTc_jUQlJnBconORSuD9Q_aem_hQ7qTlHTpWzLd8A4x9wQMg">
-                <img src="./assets/icone-whatsapp.png" class="icone-redes">
-            </a>
-
-        </div>
-    </div>
+    </footer>
 
 
 
 </body>
 
 <script src="./scripts.js"></script>
+
 
 </html>
