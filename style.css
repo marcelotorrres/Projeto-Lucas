@@ -196,6 +196,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    line-height: 1.6;
 }
 
 .galeria-img {
@@ -359,7 +360,7 @@ body {
     cursor: pointer;
 }
 
-iframe {
+.mapa {
     width: 1250px;
     height: 450px;
     display: block;
@@ -552,7 +553,7 @@ iframe {
 
     .img-info {
         width: 90%;
-        max-width: 350px;
+        max-width: 500px;
     }
 
     .galeria-conteudo {
@@ -576,7 +577,7 @@ iframe {
         max-height: 250px;
     }
 
-    iframe {
+    .mapa {
         width: 100vw;
         height: 300px;
         border: 0;
@@ -679,7 +680,8 @@ iframe {
 
     .texto-realista {
         font-size: 16px;
-        width: 400px;
+        margin: 20px 12px;
+        text-align: justify;
     }
 
     .galeria-img {
@@ -724,7 +726,7 @@ iframe {
         width: 90%;
     }
 
-    iframe {
+    .mapa {
         width: 100vw;
         height: 300px;
         border: 0;
